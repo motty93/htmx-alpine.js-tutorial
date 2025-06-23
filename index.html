@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>htmx alpine.js tutorial</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.5/htmx.min.js"
+    integrity="sha512-z+TnQ5cwS89AYwlM3KTvxM9Xlt6QwXzfHchd+EKzRg4DMNCZgbBULjDeeCo+LKHrJZlFUFKaXyD1gmfjXVrwyg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <h1>Profile</h1>
+  <button hx-get="profile.html" hx-swap="outerHTML">Click Me</button>
+</body>
+
+</html>
