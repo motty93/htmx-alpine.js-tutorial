@@ -12,11 +12,15 @@
 </head>
 
 <body>
-  <h1>Profile</h1>
-  <button hx-get="profile.html" hx-swap="outerHTML">outerHTML</button>
-  <button hx-get="profile.html" hx-target="#response" hx-trigger="mouseover">mouse over</button>
-  <div id="response">サンプル</div>
-
+  <div class="container mx-auto px-4">
+    <h1 class="text-2xl font-bold my-4">Profile</h1>
+    <div class="space-x-2 mb-4">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" hx-get="profile.html"
+        hx-swap="outerHTML">outerHTML</button>
+      <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" hx-get="profile.html"
+        hx-target="#response" hx-trigger="mouseover">mouse over</button>
+    </div>
+    <div id="response" class="p-4 border rounded">サンプル</div>
+  </div>
 </body>
-
 </html>
