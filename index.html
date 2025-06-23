@@ -12,7 +12,10 @@
 
 <body>
   <h1>Profile</h1>
-  <button hx-get="profile.html" hx-swap="outerHTML">Click Me</button>
+  <button hx-get="profile.html" hx-swap="outerHTML">outerHTML</button>
+  <button hx-get="profile.html" hx-target="#response">target</button>
+  <div id="response">サンプル</div>
+
 </body>
 
 </html>
