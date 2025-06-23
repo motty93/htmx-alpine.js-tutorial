@@ -8,12 +8,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.5/htmx.min.js"
     integrity="sha512-z+TnQ5cwS89AYwlM3KTvxM9Xlt6QwXzfHchd+EKzRg4DMNCZgbBULjDeeCo+LKHrJZlFUFKaXyD1gmfjXVrwyg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
   <h1>Profile</h1>
   <button hx-get="profile.html" hx-swap="outerHTML">outerHTML</button>
-  <button hx-get="profile.html" hx-target="#response">target</button>
+  <button hx-get="profile.html" hx-target="#response" hx-trigger="mouseover">mouse over</button>
   <div id="response">サンプル</div>
 
 </body>
